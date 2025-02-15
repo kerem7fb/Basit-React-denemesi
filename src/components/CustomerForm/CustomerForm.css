@@ -1,0 +1,36 @@
+/* Başlangıç kısmı */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.customer-input {
+    width: 80%; /* Genişlik %80 yapıldı, ihtiyaca göre değiştirilebilir */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    flex: 1;
+    margin-right: 10px; /* Buton ile metin kutusu arasına boşluk ekledik */
+}
+
+.customer-input:focus {
+    border-color: #3c4fe0;
+    box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 12px 24px; /* Boyutları ayarladık */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%; /* Butonun yüksekliğini %100 yapıyoruz */
+}
